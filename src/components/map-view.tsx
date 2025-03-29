@@ -40,7 +40,7 @@ export default function MapView({ schools, onSchoolSelect }: MapViewProps) {
     const loadGoogleMaps = () => {
       if (!window.google) {
         const script = document.createElement("script");
-        script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyDTqqPLIPujQ1nkDg49JwKw2b1TA2sUMy0&libraries=places&callback=initMap`;
+        script.src = `https://maps.googleapis.com/maps/api/js?key=xxx&libraries=places&callback=initMap`;
         script.async = true;
         script.defer = true;
         script.onerror = () => setError("Failed to load Google Maps");
